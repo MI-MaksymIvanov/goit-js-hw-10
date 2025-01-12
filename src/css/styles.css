@@ -9,10 +9,17 @@
 @import url('./base.css');
 @import url('./container.css');
 @import url('./animations.css');
-
+@import 'flatpickr/dist/flatpickr.min.css';
+@import 'izitoast/dist/css/iziToast.min.css';
 /* Sections style */
 @import url('./header.css');
 @import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+@import url('./timer.css');
+@import url('./snackbar.css');
+
+.nav-list {
+  margin-right: auto;
+  margin-left: auto;
+}

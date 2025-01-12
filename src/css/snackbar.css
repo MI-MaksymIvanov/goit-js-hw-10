@@ -1,0 +1,114 @@
+.form {
+  width: 360px;
+  margin: 32px auto 0 auto;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 16px;
+}
+
+.input-label,
+.fieldset {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.delay-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px 16px;
+
+  transition: border-color 400ms linear;
+}
+
+.delay-input:hover {
+  border-color: #000;
+}
+
+.delay-input:focus {
+  border-color: #4e75ff;
+  outline: none;
+}
+
+.fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  column-gap: 48px;
+
+  margin-bottom: 24px;
+
+  transition: border-color 400ms linear;
+}
+
+.fieldset:hover,
+.fieldset:focus {
+  border-color: #000;
+}
+
+.state-label {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+
+  cursor: pointer;
+}
+
+.custom-state-input {
+  display: inline-flex;
+  background-color: transparent;
+  outline: 1px solid #757575;
+  outline-offset: 4px;
+  border-radius: 14px;
+  width: 12px;
+  height: 12px;
+}
+
+.state-input:checked + .custom-state-input {
+  background-color: #4e75ff;
+  outline-color: #4e75ff;
+}
+
+.create-btn {
+  width: 100%;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  transition: background-color 400ms linear;
+}
+
+.create-btn:hover,
+.create-btn:focus {
+  outline: none;
+  background-color: #6c8cff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

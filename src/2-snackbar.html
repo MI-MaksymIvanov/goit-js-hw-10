@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SnackBAR</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav-list">
+          <a class="back-link" href="./index.html">Go back</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1 class="main-title">SnackBAR</h1>
+
+        <form class="form js-form">
+          <label class="input-label">
+            Delay (ms)
+            <input class="delay-input" type="number" name="delay" required />
+          </label>
+
+          <fieldset class="fieldset">
+            <legend>State</legend>
+            <label class="state-label">
+              <input
+                class="state-input visually-hidden"
+                type="radio"
+                name="state"
+                value="fulfilled"
+                required
+              />
+              <span class="custom-state-input"></span>
+              Fulfilled
+            </label>
+            <label class="state-label">
+              <input
+                class="state-input visually-hidden"
+                type="radio"
+                name="state"
+                value="rejected"
+                required
+              />
+              <span class="custom-state-input"></span>
+              Rejected
+            </label>
+          </fieldset>
+
+          <button class="create-btn" type="submit">Create notification</button>
+        </form>
+      </div>
+    </main>
+
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>
